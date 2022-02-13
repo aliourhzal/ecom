@@ -1,0 +1,92 @@
+#lightbox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 30px;
+}
+
+#lightbox .main-img {
+	height: 570px;
+	width: 570px;
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: flex-end;
+	gap: 15px;
+}
+
+#lightbox .main-img img{
+	height: 100%;
+	width: 100%;
+	border-radius: 15px;
+}
+
+#lightbox .main-img svg {
+	cursor: pointer;
+	fill: #FFFFFF;
+}
+
+#lightbox .main-img #close_img svg:hover {
+	fill: hsl(26, 100%, 55%);
+}
+
+#lightbox .main-img #arrow {
+	position: absolute;
+	top: 42%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 520px;
+}
+
+#lightbox .main-img #arrow #next,
+#lightbox .main-img #arrow #previous
+{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	cursor: pointer;
+}
+
+#lightbox .main-img #arrow #next svg,
+#lightbox .main-img #arrow #previous svg
+{
+	stroke: #1D2026;
+}
+
+#lightbox .main-img #arrow #next svg:hover,
+#lightbox .main-img #arrow #previous svg:hover
+{
+	stroke: hsl(26, 100%, 55%);
+}
+
+#lightbox .gallery {
+	height: 100px;
+	width: 500px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 30px;
+}
+
+#lightbox .gallery .thumbnail{
+	border-radius: 18px;
+	cursor: pointer;
+	overflow: hidden;
+	background-color: white;
+}
+
+#lightbox .gallery .thumbnail img {
+	height: 100%;
+	width: 100%;
+	border-radius: 15px;
+}
+
+#lightbox .gallery .thumbnail img:hover {
+	opacity: 0.5;
+}
